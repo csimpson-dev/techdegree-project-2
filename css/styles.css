@@ -1,0 +1,170 @@
+/* == CSS Style == */
+
+/* CSS Resets */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 90%;
+}
+
+/* Font/Link Styles */
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* == LAYOUT STYLES == */
+
+/* Body */
+
+body {
+  background: #2b70c2;
+}
+
+/* Header */
+
+.main-header {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.name {
+  color: #d5d5d5;
+  font-size: 3em;
+  padding-bottom: 25px;
+  border-bottom: solid 2px #d5d5d5;
+}
+
+.main-nav {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-nav li {
+  background-color: #d5d5d5;
+  margin-bottom: 10px;
+}
+
+.main-nav a {
+  color: black;
+  font-weight: bold;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Banner */
+
+.banner {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.banner p {
+  color: #d5d5d5;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* Content */
+
+.content {
+  background: grey;
+  text-align: center;
+}
+
+.portfolio {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.hobbies {
+  padding-bottom: 30px;
+}
+
+.hobbies h2 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.col {
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.col h3 {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.col p {
+  width: 90%;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+/* Contact Info */
+
+.contact {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #d5d5d5;
+}
+
+.contact-info {
+  border-bottom: solid 1px #d5d5d5;
+}
+
+/* Footer */
+
+.main-footer {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-top: solid 2px #d5d5d5;
+}
+
+.footer-name {
+  float: left;
+  padding-top: 10px;
+  margin: 0;
+  font-size: 1.2em;
+  color: #d5d5d5;
+}
+
+.to-top {
+  float: right;
+}
+
+.footer-nav {
+  display: none;
+}
+
+/* ===== CLEARFIX ===== */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
