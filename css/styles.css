@@ -41,9 +41,9 @@ body {
 
 .name {
   color: #d5d5d5;
-  font-size: 3em;
+  font-size: 2.5em;
   padding-bottom: 25px;
-  border-bottom: solid 2px #d5d5d5;
+  border-bottom: solid 1px #d5d5d5;
 }
 
 .main-nav {
@@ -58,7 +58,6 @@ body {
 
 .main-nav a {
   color: black;
-  font-weight: bold;
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -142,7 +141,7 @@ body {
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 20px;
-  border-top: solid 2px #d5d5d5;
+  border-top: solid 1px #d5d5d5;
 }
 
 .footer-name {
@@ -161,7 +160,166 @@ body {
   display: none;
 }
 
-/* ===== CLEARFIX ===== */
+/* == Media Queries == */
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+.main-nav li {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.main-nav a {
+  color: #d5d5d5;
+  border-bottom: solid 1px #d5d5d5;
+  padding-bottom: 0px;
+}
+
+.banner {
+  width: 90%;
+  padding-bottom: 40px;
+}
+
+.banner img {
+  float: right;
+  width: 40%;
+}
+
+.banner p {
+  float: left;
+  text-align: left;
+  width: 60%;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  margin-top: 0px;
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.col {
+  width: 50%;
+  float: left;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+
+.travelling {
+  float: none;
+  align-items: center;
+}
+
+.footer-name {
+  padding-top: 0;
+}
+
+.to-top {
+  display: none;
+}
+
+.footer-nav {
+  display: block;
+  float: right;
+}
+
+.footer-nav a {
+  color: #d5d5d5;
+}
+
+.footer-nav li {
+  float: left;
+  padding: 0 15px;
+  border-right: solid 1px #d5d5d5;
+}
+
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.main-header {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  margin: 0;
+  background-color: grey;
+  width: 100%;
+}
+
+.name {
+  color: #d5d5d5;
+}
+
+.main-nav {
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.main-nav a {
+  margin: 0;
+  padding: 0;
+  color: #d5d5d5;
+  border-bottom: none;
+}
+
+.main-nav li {
+  border-bottom: none;
+}
+
+.name {
+  float: left;
+  margin: 0;
+  padding: 0;
+  border-bottom: none;
+}
+
+.banner {
+  margin: 0;
+}
+
+.banner p {
+  padding-left: 0px;
+  font-size: 1.2em;
+}
+
+.banner img {
+  position: relative;
+  right: -80px;
+}
+
+.col {
+  width: 33.3%;
+}
+
+.travelling {
+  float: left;
+}
+
+.main-footer {
+  width: 100%;
+}
+
+}
+
+/* == Clearfix == */
 
 .clearfix::after {
   content: "";
